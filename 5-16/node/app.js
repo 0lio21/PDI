@@ -31,7 +31,7 @@ app.get('/usuarios/:id', (req, res) => {
             res.json(alumnoSinPassword);
         }
     } else {
-        res.status(404).json({ message: 'No se encontró un alumno con ese ID' });
+        res.json({ message: 'No se encontró un alumno con ese ID' });
     }
 });
 
