@@ -5,7 +5,7 @@ class Usuario:
         self.nombre = nombre
         self.correo = correo
         self.password = password
-
+    
 def iniciar_sesion(mycursor, correo, password):
     sql = "SELECT nombre, correo, password FROM usuarios WHERE correo = %s AND password = %s"
     mycursor.execute(sql, (correo, password))
